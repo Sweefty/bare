@@ -1,4 +1,9 @@
 /*===========================================================================*/
+/*  Fonts
+/*===========================================================================*/
+@import url('fontastic/styles.css');
+
+/*===========================================================================*/
 /*  Grid
 /*===========================================================================*/
 .row {
@@ -71,7 +76,7 @@
 /*===========================================================================*/
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .row {
-        display:inline;
+        /*display:inline;*/
     }
     
     .row .column {
@@ -88,7 +93,7 @@
 /*===========================================================================*/
 @media only screen and (max-width: 767px) {
     .row {
-        display:inline;
+        /*display:inline;*/
     }
     
     .row .column {
@@ -125,44 +130,53 @@
     overflow:hidden;
 }
 
-.column input {
-    margin-bottom:15px;
-    padding:8px;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); 
-    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); 
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-    border:1px solid #ccc;
-    font-size:14px;
+.form textarea:focus, .form input:focus {
+    outline: 0;
+    border: 1px solid #999;
 }
 
-.form input[type=text]:focus {
-    background:#efefef;
+.form input, .form textarea, .form select {
+    /*height: 38px;*/
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
-.form label {
-    display:block;
-    cursor:pointer;
+.form select {
+    outline: none;
+    padding: 0;
+    height: 38px;
+    /*safari padding hack*/
+    text-indent: 5px;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.form textarea {
+    min-height: 200px;
 }
 
 .form span.prefix, .form span.postfix {
     display:block;
     text-align:center;
-    line-height:32px;
     background:#eee;
     border:1px solid #ccc;
     border-right:none;
     color:#555;
-    height:34px;
-    overflow:hidden;
-    font-size:14px;
+    height: 38px;
+    line-height: 36px;
+    overflow: hidden;
+    font-size: 14px;
     margin:0;
 }
 
-.form .row {
-    margin-bottom:10px;
+.prefix .icon {
+    font-size: 18px;
+    top: 4px;
+    position: relative;
 }
 
-.form button.postfix,.form button.prefix {
+.form button.postfix, .form button.prefix {
     line-height:32px;
     overflow:hidden;
     font-size:14px;
@@ -173,6 +187,12 @@
 .form span.postfix {
     border:1px solid #ccc;
     border-left:none;
+}
+
+.form label {
+    display:block;
+    cursor:pointer;
+    margin-bottom: 10px;
 }
 
 .form label span.small {
@@ -186,6 +206,8 @@
 
 .form ul.list {
     list-style:none;
+    padding: 0;
+    margin: 0;
 }
 
 .form ul.list li {
@@ -210,6 +232,43 @@
     width:100%;
     margin:0;
 }
+
+/*=== ICONS INSIDE INPUT ===*/
+.icon.inside.input {
+    position: relative;
+    overflow: hidden;
+}
+
+.icon.inside.input input {
+    width: 100%;
+    padding-right: 45px;
+}
+
+.icon.inside.input.left input {
+    padding-right: 5px;
+    padding-left: 45px;
+}
+
+.icon.inside.input .icon {
+    color: #ccc;
+    background: transparent;
+    display: block;
+    position: absolute;
+    border: 1px solid #ccc;
+    right: 0;
+    top: 0;
+    height: 38px;
+    width: 40px;
+    text-align: center;
+    line-height: 2.1;
+    font-size: 22px;
+}
+
+.icon.inside.input.left .icon {
+    left: 0;
+}
+
+
 /*===========================================================================*/
 /*                                  Misc Styles                              */
 /*===========================================================================*/
@@ -241,7 +300,7 @@ img {
 }
 
 @media \0screen {
-    img { 
+    img {
         width: auto; /* for ie 8 */
     }
 }

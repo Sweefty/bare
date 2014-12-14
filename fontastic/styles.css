@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "bare";
+  src:url("fonts/bare.eot");
+  src:url("fonts/bare.eot?#iefix") format("embedded-opentype"),
+    url("fonts/bare.woff") format("woff"),
+    url("fonts/bare.ttf") format("truetype"),
+    url("fonts/bare.svg#bare") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "bare" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "bare" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-graph-bar:before {
+  content: "a";
+}
+.icon-graph-pie:before {
+  content: "b";
+}
+.icon-at-sign:before {
+  content: "c";
+}
+.icon-graph-trend:before {
+  content: "d";
+}
+.icon-monitor:before {
+  content: "e";
+}
+.icon-info:before {
+  content: "f";
+}
+.icon-magnifying-glass:before {
+  content: "g";
+}
+.icon-heart:before {
+  content: "h";
+}
+.icon-filter:before {
+  content: "i";
+}
+.icon-arrows-in:before {
+  content: "j";
+}
+.icon-arrows-out:before {
+  content: "k";
+}

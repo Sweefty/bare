@@ -1,0 +1,234 @@
+<!doctype html>
+    <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+    <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+    <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><html lang="en"><![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <title>bare - bare minimal css framework</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+        <link rel="stylesheet" href="../bare.css">
+        <style>
+            .block {
+                width: 90%;
+                padding: 20px;
+                margin: 0 auto;
+                background: #fff;
+                text-align: center;
+            }
+            
+            .block p, .block .nested {
+                padding: 10px;
+                margin: 5px;
+                border: 1px solid #ccc;
+                overflow: hidden;
+                background: #fff;
+            }
+
+            .block p:hover {
+                background: #eee;
+            }
+
+            .block .nested {
+                overflow: hidden;
+                background: #eee;
+            }
+            
+            .title {
+                text-align: center;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="block">
+            <div class="row">
+                <div class="grid-12 column title"><h1>Grid System</h1></div>
+            </div>
+            
+            <div class="row">
+                <div class="grid-12 column"><p>grid-12</p></div>
+            </div>
+
+            <div class="row">
+                <div class="grid-11 column"><p>grid-11</p></div>
+                <div class="grid-1 column"><p>grid-1</p></div>    
+            </div>
+            
+            <div class="row">
+                <div class="grid-10 column"><p>grid-10</p></div>
+                <div class="grid-2 column"><p>grid-2</p></div>
+            </div>
+            
+            <div class="row">
+                <div class="grid-9 column"><p>grid-9</p></div>
+                <div class="grid-3 column"><p>grid-3</p></div>
+            </div>
+
+            <div class="row">
+                <div class="grid-8 column"><p>grid-8</p></div>
+                <div class="grid-4 column"><p>grid-4</p></div>
+            </div>
+            
+            <div class="row">
+                <div class="grid-7 column"><p>grid-7</p></div>
+                <div class="grid-5 column"><p>grid-5</p></div>
+            </div>
+            
+            <div class="row">
+                <div class="grid-6 column"><p>grid-6</p></div>
+                <div class="grid-6 column"><p>grid-6</p></div>
+            </div>
+        </div>
+        
+        
+        <div class="block">
+            <div class="row">
+                <div class="grid-12 column title"><h1>Split On Device</h1></div>
+            </div>
+            
+            <div class="row">
+                <div class="grid-12 column split-3"><p>grid-12</p></div>
+                <div class="grid-11 column split-3"><p>grid-11</p></div>
+                <div class="grid-1 column split-3"><p>grid-1</p></div>
+                
+                <div class="grid-10 column split-3 small-split-2"><p>grid-10</p></div>
+                <div class="grid-2 column split-3 small-split-2"><p>grid-2</p></div>
+                
+                <div class="grid-9 column split-3 small-split-2"><p>grid-9</p></div>
+                <div class="grid-3 column split-3 small-split-2"><p>grid-3</p></div>
+                
+                <div class="grid-8 column split-3 small-split-2"><p>grid-8</p></div>
+                <div class="grid-4 column split-3 small-split-2"><p>grid-4</p></div>
+                
+                <div class="grid-7 column split-2"><p>grid-7</p></div>
+                <div class="grid-5 column split-2"><p>grid-5</p></div>
+                
+                <div class="grid-6 column split-2"><p>grid-6</p></div>
+                <div class="grid-6 column split-2"><p>grid-6</p></div>
+            </div>
+        </div>
+        
+        <div class="block row">
+            <div class="row">
+                <div class="grid-12 column title"><h1>Centered Columns</h1></div>
+            </div>
+            
+            <div class="row">
+                <div class="grid-11 center column"><p>grid-11</p></div>
+            </div>
+            
+            <div class="row">
+                <div class="grid-7 center column"><p>grid-7</p></div>
+            </div>
+            
+            <div class="row">
+                <div class="grid-3 column center"><p>grid-3</p></div>
+            </div>
+        </div>
+        
+        
+        <div class="block row">
+            <div class="row">
+                <div class="grid-12 column title"><h1>Nested</h1></div>
+            </div>
+            
+            <div class="row">
+                <div class="grid-12 column">
+                    <div class="nested">
+                        <div class="grid-6 column">
+                            <p>grid-6</p>
+                        </div>
+                        <div class="grid-6 column">
+                            <div class="row">
+                                <div class="grid-6 column">
+                                    <p>grid-6</p>
+                                </div>
+                                <div class="grid-6 column">
+                                    <p>grid-6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="grid-12 column">
+                    <div class="nested">
+                        <div class="grid-3 column">
+                            <p>grid-3</p>
+                        </div>
+                        <div class="grid-9 column">
+                            <div class="row">
+                                <div class="grid-6 column">
+                                    <p>grid-6</p>
+                                </div>
+                                <div class="grid-6 column">
+                                    <p>grid-6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="block row">
+            <div class="row">
+                <div class="grid-12 column title"><h1>No Columns</h1></div>
+            </div>
+            
+            <div class="row">
+                <div class="grid-12 column">
+                    <div class="nested">
+                        <div class="grid-6">
+                            <p>grid-6</p>
+                        </div>
+                        <div class="grid-6">
+                            <div class="row">
+                                <div class="grid-6">
+                                    <p>grid-6</p>
+                                </div>
+                                <div class="grid-6">
+                                    <p>grid-6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="grid-12 column">
+                    <div class="nested">
+                        <div class="grid-3 column">
+                            <p>grid-3</p>
+                        </div>
+                        <div class="grid-9 column">
+                            <div class="row">
+                                <div class="grid-6">
+                                    <p>grid-6</p>
+                                </div>
+                                <div class="grid-6">
+                                    <p>grid-6</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
