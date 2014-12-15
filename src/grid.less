@@ -1,0 +1,106 @@
+/*===========================================================================*/
+/*  Grid
+/*===========================================================================*/
+.row {
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+
+.row .column {
+    margin:0;
+    float: left;
+}
+
+.grid-1,.grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, 
+.grid-8, .grid-9, .grid-10,.grid-11,.grid-12 {
+    float:left;
+    margin:0;
+}
+
+.row .row {
+    width:100%;
+    margin:0;
+    overflow:hidden;
+    float:left;
+}
+
+.row .center {
+    float:none;
+    margin:0 auto;
+}
+
+.grid-1 { width: 8.33333%; }
+.grid-2 { width: 16.66667%; }
+.grid-3 { width: 25%; }
+.grid-4 { width: 33.33333%; }
+.grid-5 { width: 41.66667%; }
+.grid-6 { width: 49.99999%; }
+.grid-7 { width: 58.33333%; }
+.grid-8 { width: 66.66667%; }
+.grid-9 { width: 75%; }
+.grid-10 { width: 83.33333%; }
+.grid-11 { width: 91.66667%; }
+.grid-12 { width: 100%; }
+
+
+/*===========================================================================*/
+/* Xlarge
+/*===========================================================================*/
+@media @xlarge {}
+
+/*===========================================================================*/
+/* Large
+/*===========================================================================*/
+@media @large {
+    .row .split-2, .medium-split-2 { width: 50%; }
+    .row .split-3, .medium-split-3 { width: 33.33333%; }
+    .row .split-4, .medium-split-4 { width: 25%; }
+    
+    .row .medium-split-2 { width: 50%; }
+    .row .medium-split-3 { width: 33.33333%; }
+    .row .medium-split-4 { width: 25%; }
+}
+
+/*===========================================================================*/
+/*  Medium
+/*===========================================================================*/
+@media @medium {
+    .row .column {
+        width:50%;
+    }
+    
+    .row .column.center {
+        padding-right:0;
+    }
+}
+
+/*===========================================================================*/
+/*  small
+/*===========================================================================*/
+@media @small {
+    .row .column {
+        width:100%;
+    }
+    
+    .row .column.center {
+        padding-right:0;
+    }
+    
+    .row .split-2 { width: 50%; }
+    .row .split-3 { width: 33.33333%; }
+    .row .split-4 { width: 25%; }
+    
+    .row .small-split-2 { width: 50%; }
+    .row .small-split-3 { width: 33.33333%; }
+    .row .small-split-4 { width: 25%; }
+}
+
+.clear {
+    clear:both;
+}
+
+/* Nicolas Gallagher's micro clearfix */
+.row:before, .row:after, .clearfix:before, .clearfix:after { content:""; display:table; }
+.row:after, .clearfix:after { clear: both; }
+.row, .clearfix { zoom: 1; }

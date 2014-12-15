@@ -1,0 +1,214 @@
+<!doctype html>
+    <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+    <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+    <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+    <!--[if (gte IE 9)|!(IE)]><html lang="en"><![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <title>bare - bare minimal css framework</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+        <link rel="stylesheet" href="../css/bare.css">
+        <style>
+            .block {
+                width: 80%;
+                padding: 20px;
+                margin: 0 auto;
+                background: #fff;
+                text-align: left;
+            }
+            
+            .block .block {
+                width: 100%;
+                padding: 10px;
+                margin: 5px;
+                background: #f9f9f9;
+            }
+
+            .block p, .block .nested {
+                padding: 10px;
+                margin: 5px;
+                border: 1px solid #ccc;
+                overflow: hidden;
+                background: #fff;
+            }
+
+            .block p:hover {
+                background: #eee;
+            }
+
+            .block .nested {
+                overflow: hidden;
+                background: #eee;
+            }
+            
+            .title {
+                text-align: center;
+            }
+
+            .form .row {
+                padding: 20px;
+                background: #f9f9f9;
+                margin-bottom:30px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <div class="block">
+            <div class="row">
+                <div class="grid-12 column title"><h1>Buttons</h1></div>
+            </div>
+            
+            
+            <!-- FLAT -->
+            <div class="row block">
+                <div class="grid-12 column">
+                    <button class="button small">Default</button>
+                    <button class="button small blue">Button</button>
+                    <button class="button small green">Button</button>
+                    <button class="button small red">Button</button>
+                    <button class="button small orange">Button</button>
+                </div> 
+            </div>
+
+            <div class="row block">
+                <div class="grid-12 column">
+                    <button class="button">Default</button>
+                    <button class="button blue">Blue</button>
+                    <button class="button green">Green</button>
+                    <button class="button red">Red</button>
+                    <button class="button orange">Orange</button>
+                </div> 
+            </div>
+
+            <div class="row block">
+                <div class="grid-12 column">
+                    <button class="button large">Default</button>
+                    <div class="button large blue">Blue</div>
+                    <button class="button large green">Green</button>
+                    <button class="button large red">Red</button>
+                    <button class="button large orange">Orange</button>
+                </div> 
+            </div>
+
+
+
+            <!-- ROUNDED -->
+            <div class="row block">
+                <div class="grid-12 column">
+                    <button class="button rounded">Default</button>
+                    <button class="button rounded blue">Blue</button>
+                    <button class="button rounded green">Green</button>
+                    <button class="button rounded red">Red</button>
+                    <button class="button rounded orange">Orange</button>
+                </div> 
+            </div>
+
+
+            <!-- ICONS -->
+            <div class="row block">
+                <div class="grid-12 column">
+                    <button class="button rounded with icon">
+                        <span class="icon-info"></span>
+                        Default
+                    </button>
+
+                    <div class="button rounded orange with icon">
+                        <span class="icon-magnifying-glass"></span>
+                        Default adasdasd asdadadas asasdadsasdasd asdads
+                    </div>
+                    
+                    <div class="button rounded blue with icon">
+                        <span class="icon-magnifying-glass"></span>
+                    </div>
+                </div> 
+            </div>
+            <div class="row block">
+                <div class="grid-12 column">
+                    <button class="button rounded with icon right">
+                        <span class="icon-info"></span>
+                        Default
+                    </button>
+
+                    <div class="button rounded orange with icon right">
+                        <span class="icon-magnifying-glass"></span>
+                        Default adasdasd asdadadas asasdadsasdasd asdads
+                    </div>
+                    
+                    <div class="button rounded blue with icon right">
+                        <span class="icon-magnifying-glass"></span>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- small -->
+            <div class="row block">
+                <div class="grid-12 column">
+                    
+                    <button class="button with icon small green">
+                        <span class="icon-monitor"></span>
+                        Default
+                    </button>
+
+                    <button class="button orange with icon small">
+                        <span class="icon-magnifying-glass"></span>
+                        Orange
+                    </button>
+                    
+                    <div class="button blue with icon small">
+                        <span class="icon-graph-trend"></span>
+                    </div>
+                </div> 
+            </div>
+            <div class="row block">
+                <div class="grid-12 column">
+                    
+                    <button class="button with icon small green right">
+                        <span class="icon-monitor"></span>
+                        Default
+                    </button>
+
+                    <button class="button orange with icon small right">
+                        <span class="icon-magnifying-glass"></span>
+                        Orange
+                    </button>
+                    
+                    <div class="button blue with icon small right">
+                        <span class="icon-graph-trend"></span>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="row block">
+                <div class="grid-12 column">
+                    
+                    <button class="button with icon large green">
+                        <span class="icon-monitor"></span>
+                        Default
+                    </button>
+
+                    <button class="button orange with icon large">
+                        <span class="icon-magnifying-glass"></span>
+                        Orange
+                    </button>
+                    
+                    <div class="button blue with icon large">
+                        <span class="icon-graph-trend"></span>
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+    </body>
+</html>
