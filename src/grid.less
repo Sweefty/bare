@@ -44,40 +44,45 @@
 .grid-12 { width: 100%; }
 
 
-/*===========================================================================*/
-/* Xlarge
-/*===========================================================================*/
+/* Xlarge */
 @media @xlarge {}
 
-/*===========================================================================*/
-/* Large
-/*===========================================================================*/
-@media @large {
-    .row .split-2, .medium-split-2 { width: 50%; }
-    .row .split-3, .medium-split-3 { width: 33.33333%; }
-    .row .split-4, .medium-split-4 { width: 25%; }
-    
-    .row .medium-split-2 { width: 50%; }
-    .row .medium-split-3 { width: 33.33333%; }
-    .row .medium-split-4 { width: 25%; }
-}
 
-/*===========================================================================*/
-/*  Medium
-/*===========================================================================*/
+/* Large*/
+@media @large {}
+
+/*  Medium */
 @media @medium {
+
     .row .column {
         width:50%;
     }
+
+    .row .column.grid-12 {
+        width:100%;
+    }
+    
+    .row .column.center {
+        width:100%;
+    }
+
+    .row .medium-center {
+        float:none;
+        margin:0 auto;
+        clear: both;
+    }
+
+    .split-1, .medium-split-1 { width: 100% !important; }
+    .split-2, .medium-split-2 { width: 50% !important; }
+    .split-3, .medium-split-3 { width: 33.33333%  !important; }
+    .split-4, .medium-split-4 { width: 25% !important; }
     
     .row .column.center {
         padding-right:0;
     }
 }
 
-/*===========================================================================*/
-/*  small
-/*===========================================================================*/
+/*  small */
 @media @small {
     .row .column {
         width:100%;
@@ -87,13 +92,10 @@
         padding-right:0;
     }
     
-    .row .split-2 { width: 50%; }
-    .row .split-3 { width: 33.33333%; }
-    .row .split-4 { width: 25%; }
-    
-    .row .small-split-2 { width: 50%; }
-    .row .small-split-3 { width: 33.33333%; }
-    .row .small-split-4 { width: 25%; }
+    .split-1, .small-split-1 { width: 100% !important; }
+    .split-2, .small-split-2 { width: 50% !important; }
+    .split-3, .small-split-3 { width: 33.33333% !important; }
+    .split-4, .small-split-4 { width: 25% !important; }
 }
 
 .clear {
