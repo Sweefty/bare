@@ -1,4 +1,4 @@
-@import url('fontastic/styles.css');
+@import url('icons/styles.css');
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -354,6 +354,11 @@ textarea {
   }
   .row .column.center {
     padding-right: 0;
+  }
+  .row .small-center {
+    float: none;
+    margin: 0 auto;
+    clear: both;
   }
   .split-1,
   .small-split-1 {
