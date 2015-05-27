@@ -1,6 +1,5 @@
 var fs     = require('fs');
 var path   = require('path');
-var assert = require('assert');
 
 var emConverter = function(less, fontsize, basefontsize){
     if (less.tree.functions.ispixel(fontsize)){
@@ -51,11 +50,9 @@ module.exports = function(grunt) {
     //load
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    // grunt.loadNpmTasks('grunt-compile-handlebars');
 
     //register
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('watcher'  , ['watch']);
     grunt.registerTask('build'  , ['less']);
-    //grunt.registerTask('assemble', ['compile-handlebars']);
 };
