@@ -1,0 +1,25 @@
+{
+  "name": "bare",
+  "version": "1.0.0",
+  "homepage": "http://sweefty.com/bare",
+  "authors": [
+    "mamod <mamod.mehyar@gmail.com>"
+  ],
+  "description": "Bare minimal responsive css grid",
+  "main": [
+    "dist/css/bare.css",
+    "dist/css/bare-min.css",
+  ],
+  "keywords": [
+    "css grid",
+    "responsive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
