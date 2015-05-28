@@ -8,7 +8,7 @@
   "description": "Bare minimal responsive css grid",
   "main": [
     "dist/css/bare.css",
-    "dist/css/bare-min.css",
+    "dist/css/bare-min.css"
   ],
   "keywords": [
     "css grid",
